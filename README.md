@@ -1,16 +1,15 @@
-## Hi there 👋
+## Greetings 👋
 
-<!--
-**wilfongtech/wilfongtech** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 Going beyond Helpdesk!
+I am actively transitioning from foundational support into specialized engineering roles. My home lab serves as a sandbox for learning the "Next Level" of IT infrastructure:
 
-Here are some ideas to get you started:
+- 🏗️ **Systems Architecture:** Designing virtualized environments using Proxmox VMs, Containers, and Podman to continually educate myself on technology. 
+- 🤖 **DevOps & Automation:** Moving away from manual fixes by using Bash scripting and Systemd to create "Infrastructure as Code" (IaC) environments.
+- 🐧 **Linux Engineering:** Deep-diving into Linux-based ecosystems to learn, adapt, and master a skillset I didn't previously have.
+- 🕸️ **Network Engineering:** Utilizing Proxmox and Unifi, I have learned about networking from a pragmatic point of view. 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🛠️ What I'm working on
+- **Creating a all in one script to launch Minecraft Servers in Ubuntu Server
+- **Managing Proxmox environments in my homelab
+- **Creating a Podman setup to also learn about containerization
+- **Diving into GO as a programming language
