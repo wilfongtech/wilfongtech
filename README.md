@@ -24,3 +24,16 @@ I am actively transitioning from foundational support into specialized engineeri
 ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Podman](https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white)
 ![UniFi](https://img.shields.io/badge/UniFi-0559C9?style=for-the-badge&logo=ubiquiti&logoColor=white)
+
+## 🗺️ Learning Roadmap: The Path Beyond Helpdesk
+
+I am currently focusing on evolving my home lab from manual management to automated, scalable infrastructure. Here is what I am tackling next:
+
+- 📦 **Podman & Containerization:** * *Goal:* Transitioning from full VMs to lightweight, rootless containers.
+  * *Focus:* Mastering OCI-compliant images and moving my utility services (like Uptime Kuma) into a containerized workflow.
+
+- 📜 **Ansible (Configuration as Code):** * *Goal:* Eliminating manual "re-installs."
+  * *Focus:* Writing playbooks to automatically configure new Proxmox nodes and Ubuntu instances so I can recreate my entire environment with one command.
+
+- 🏗️ **Building My First Application:** * *Goal:* Moving from "managing" software to "creating" it.
+  * *Focus:* Developing a custom tool (likely in or Go) to help monitor my game server status or automate specific IT support tasks.
