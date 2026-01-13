@@ -13,3 +13,4 @@ I am actively transitioning from foundational support into specialized engineeri
 - **Managing Proxmox environments in my homelab
 - **Creating a Podman setup to also learn about containerization
 - **Diving into GO as a programming language
+- **Learning to use AI not as a mean to vibecode, but as an accelarator of gathering knowledge
