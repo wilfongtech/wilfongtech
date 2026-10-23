@@ -1,7 +1,7 @@
 # Hi, I'm Alex 👋
 
-### Systems & Endpoint Engineer | Hybrid Cloud & Infrastructure Automation
-I am a Desktop Administrator and Systems Engineer advancing complex hybrid infrastructure, endpoint management, and directory services. My homelab serves as an enterprise-grade proving ground where I design, automate, and secure physical networking, clustered virtualization, modern directory federation, and containerized services.
+### Desktop Engineer | Aspiring Systems Engineer
+I am a Desktop Administrator in my day job, and this is my home lab. My home lab serves as an enterprise-grade proving ground where I design, automate, and secure physical networking, clustered virtualization, modern directory federation, and containerized services.
 
 ---
 
