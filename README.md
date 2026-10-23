@@ -1,39 +1,71 @@
-## Greetings 👋
+# Hi, I'm Alex 👋
 
-## 🚀 Going beyond Helpdesk!
-I am actively transitioning from foundational support into specialized engineering roles. My home lab serves as a sandbox for learning the "Next Level" of IT infrastructure:
+### Systems & Endpoint Engineer | Hybrid Cloud & Infrastructure Automation
+I am a Desktop Administrator and Systems Engineer advancing complex hybrid infrastructure, endpoint management, and directory services. My homelab serves as an enterprise-grade proving ground where I design, automate, and secure physical networking, clustered virtualization, modern directory federation, and containerized services.
 
-- 🏗️ **Systems Architecture:** Designing virtualized environments using Proxmox VMs, Containers, and Podman to continually educate myself on technology. 
-- 🤖 **DevOps & Automation:** Moving away from manual fixes by using Bash scripting and Systemd to create "Infrastructure as Code" (IaC) environments.
-- 🐧 **Linux Engineering:** Deep-diving into Linux-based ecosystems to learn, adapt, and master a skillset I didn't previously have.
-- 🕸️ **Network Engineering:** Utilizing Proxmox and Unifi, I have learned about networking from a pragmatic point of view. 
+---
 
-### 🛠️ What I'm working on
-- **Creating a all in one script to launch Minecraft Servers in Ubuntu Server
-- **Managing Proxmox environments in my homelab
-- **Creating a Podman setup to also learn about containerization
-- **Diving into GO as a programming language
-- **Learning to use AI not as a mean to vibecode, but as an accelarator of gathering knowledge
+## 🏗️ What I've Built (Homelab & Production Architectures)
 
-### 💻 Tech Stack & Tools
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E9430F?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Podman](https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white)
+### **Enterprise Identity & Modern Management**
+* **Hybrid Identity Architecture:** Integrated **Microsoft 365 Business Premium** and **Microsoft Entra ID** with **Okta** as an Identity Provider (IdP), bridging cloud single sign-on (SSO) with an on-premises **Windows Server 2022 Active Directory** domain controller.
+* **Modern Endpoint Management:** Built zero-touch **Windows Autopilot** ingestion pipelines leveraging Microsoft Graph API, Entra dynamic device groups, and **Microsoft Intune** deployment profiles.
+* **Granular Role-Based Access Control:** Configured Entra ID OpenID Connect (OIDC) authentication realms for Proxmox cluster access with strict administrative group bindings.
+
+### **Clustered Virtualization & Infrastructure as Code**
+* **3-Node Proxmox VE Cluster (`wt-cluster`):** Engineered a high-availability hypervisor cluster running across dedicated compute nodes with LVM-Thin storage pools and VirtIO optimizations.
+* **Cloud-Init Golden Image Pipeline:** Built automated Bash provisioning pipelines that fetch, verify (SHA512), and convert upstream Debian 13 (Trixie) cloud images into hardened, headless, passwordless templates deployed in seconds.
+* **Container Orchestration:** Deployed Docker Compose stacks and Portainer environments across Debian hosts, running production services (Audiobookshelf, Prometheus, Grafana) with non-root security contexts and dropped Linux capabilities.
+
+### **Core Networking & Perimeter Security**
+* **L2/L3 Segmentation:** Configured an enterprise **Juniper EX2200-C** switch via JunOS CLI, establishing 802.1Q trunking, dedicated VLANs (`Management`, `Infra`, `Container-VMs`, `Clients`), and routed virtual interfaces (RVI).
+* **Perimeter Defense & Routing:** Deployed a **UniFi Cloud Gateway Ultra** perimeter router with encrypted DNS upstream resolvers (`Cloudflare/Quad9`) and automated dynamic DNS with WireGuard remote access.
+
+### **Observability & Incident Telemetry**
+* **Centralized Monitoring Stack:** Deployed **Zabbix 7.0 LTS** with PostgreSQL and NGINX inside a Debian LXC container on an isolated VLAN, collecting metrics via Zabbix Agent 2 across hypervisor nodes.
+* **Custom Alerting Pipeline:** Engineered an automated incident routing engine utilizing an Entra App Registration and Microsoft Graph API to dispatch system alerts directly via Microsoft 365.
+* **Dashboards & Metrics:** Deployed an OWASP-hardened **Grafana** instance connected to the Zabbix API using dedicated, least-privilege service tokens.
+
+---
+
+## 💻 Tech Stack & Tools
+
+**Identity & Cloud**  
+![Microsoft Entra ID](https://img.shields.io/badge/Entra_ID-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Microsoft Intune](https://img.shields.io/badge/Microsoft_Intune-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Okta](https://img.shields.io/badge/Okta-007DC1?style=for-the-badge&logo=okta&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![Microsoft 365](https://img.shields.io/badge/Microsoft_365-D83B01?style=for-the-badge&logo=microsoftoffice&logoColor=white)
+
+**Systems & Virtualization**  
+![Proxmox VE](https://img.shields.io/badge/Proxmox_VE-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Ubuntu Server](https://img.shields.io/badge/Ubuntu-E9430F?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
+
+**Networking & Observability**  
+![Juniper JunOS](https://img.shields.io/badge/Juniper_Networks-000000?style=for-the-badge&logo=junipernetworks&logoColor=white)
 ![UniFi](https://img.shields.io/badge/UniFi-0559C9?style=for-the-badge&logo=ubiquiti&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix_7.0_LTS-D40000?style=for-the-badge&logo=zabbix&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=for-the-badge&logo=wireguard&logoColor=white)
 
-## 🗺️ Learning Roadmap: The Path Beyond Helpdesk
+**Automation & Development**  
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-F05138?style=for-the-badge&logo=swift&logoColor=white)
 
-I am currently focusing on evolving my home lab from manual management to automated, scalable infrastructure. Here is what I am tackling next:
+---
 
-- 📦 **Podman & Containerization:** * *Goal:* Transitioning from full VMs to lightweight, rootless containers.
-  * *Focus:* Mastering OCI-compliant images and moving my utility services (like Uptime Kuma) into a containerized workflow.
+## 🗺️ Engineering Roadmap & Immediate Focus
 
-- 📜 **Ansible (Configuration as Code):** * *Goal:* Eliminating manual "re-installs."
-  * *Focus:* Writing playbooks to automatically configure new Proxmox nodes and Ubuntu instances so I can recreate my entire environment with one command.
-
-- 🏗️ **Building My First Application:** * *Goal:* Moving from "managing" software to "creating" it.
-  * *Focus:* Developing a custom tool (likely in or Go) to help monitor my game server status or automate specific IT support tasks.
+* 📜 **Configuration Management (Ansible):** Moving from single-host provisioning scripts to agentless configuration playbooks for OS-level baseline hardening, automated SSH key rotation, and fleet-wide Zabbix Agent deployments.
+* 📦 **CI/CD & GitOps Workflows:** Deploying private GitHub Actions self-hosted runners within isolated homelab VLANs to automate Docker stack deployments and infrastructure linting pipelines on commit.
+* 🎓 **Certifications & Education:**
+  * **WGU:** Master of Science in Information Technology (*In Progress*)
+  * **Microsoft Certified:** MD-102 (Endpoint Administrator Associate)
+  * **Linux Professional Institute:** Linux Essentials
